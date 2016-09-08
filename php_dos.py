@@ -33,7 +33,11 @@ class pusher():
             print '请求失败'
 
 if __name__=="__main__":
-    url = "http://www.djxmall.com"
+    print sys.argv
+    url = "http://www.yxzj520.com"
+    #sys.exit()
+    if  len(sys.argv) > 1:
+        url = sys.argv[1]
     thread_count = 50
     proxies = get_proxies()
 
